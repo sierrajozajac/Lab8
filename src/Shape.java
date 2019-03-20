@@ -4,9 +4,9 @@ public enum Shape {
 	@Override
 	public String toString() {
 	    switch(this) {
-	      case THIMBLE: return "Thimble";
-	      case BOOT: return "Boot";
-	      case RACECAR: return "Racecar";
+	      case THIMBLE: return "thimble";
+	      case BOOT: return "boot";
+	      case RACECAR: return "racecar";
 	      default: throw new IllegalArgumentException();
 	    }
 	}
