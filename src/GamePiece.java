@@ -1,0 +1,10 @@
+public enum GamePiece {
+	RED_RACER(),
+	BLUE_RACER(),
+	MAGENTA_RACER(),
+	RED_THIMBLE(),
+	BLUE_BOOT(),
+	GREEN_BOOT(),
+	YELLOW_BOOT();
+
+}
