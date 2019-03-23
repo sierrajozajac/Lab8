@@ -36,6 +36,6 @@ public enum GamePiece {
 	}
 	
 	public String toString() {
-		return appearance.getColor() + appearance.getShape().toString();
+		return appearance.getColor() + " " + appearance.getShape().toString();
 	}
 }

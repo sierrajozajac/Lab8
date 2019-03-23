@@ -7,24 +7,36 @@ public enum Color {
 	MAGENTA(255, 0, 255);
 	
 	private int r;
+	private int g;
 	private int b;
-	private int y;
 
-	private Color(int red, int blue, int yellow) {
+	private Color(int red, int green, int blue) {
 		r = red;
+		g = green;
 		b = blue;
-		y = yellow;
 	}
 	
 	public int getR() {
 		return r;
 	}
 	
+	public int getG() {
+		return g;
+	}
+	
 	public int getB() {
 		return b;
 	}
 	
-	public int getY() {
-		return y;
+	public String toString() {
+		switch(this) {
+		case RED: return "red";
+		case GREEN: return "green";
+		case BLUE: return "blue";
+		case YELLOW: return "yellow";
+		case CYAN: return "cyan";
+		case MAGENTA: return "magenta";
+		default: throw new IllegalArgumentException();
+		}
 	}
 }
