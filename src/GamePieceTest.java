@@ -26,6 +26,8 @@ public class GamePieceTest {
 		Assert.assertEquals(GamePiece.RED_RACER.toString(), "red racecar");
 		Assert.assertEquals(GamePiece.RED_THIMBLE.toString(), "red thimble");
 		Assert.assertEquals(GamePiece.YELLOW_BOOT.toString(), "yellow boot");
+		
+		// TODO: finish moves first testing
 	}
 
 }
