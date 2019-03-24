@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.junit.*;
 
@@ -103,7 +105,33 @@ public class BoardGameTest {
 		Assert.assertEquals(game.getGamePiecesAtLocation(l8), piecesAtL8);
 		Assert.assertEquals(game.getGamePiecesAtLocation(l9), piecesAtL9);
 
-		// TODO: finish this
+		Set<String> playerSet = new HashSet<String>();
+		playerSet.add("Player1");
+		playerSet.add("Player2");
+		playerSet.add("Player3");
+		playerSet.add("Player4");
+		playerSet.add("Player5");
+		playerSet.add("Player6");
+		playerSet.add("Player7");
+		
+		Assert.assertEquals(game.getPlayers(), playerSet);
+		
+		Set<Location> locationSet = new HashSet<Location>();
+		locationSet.add(l8);
+		locationSet.add(l9);
+		
+		Assert.assertEquals(game.getPlayerLocations(), locationSet);
+		
+		Set<GamePiece> gamePieceSet = new HashSet<GamePiece>();
+		gamePieceSet.add(gp1);
+		gamePieceSet.add(gp2);
+		gamePieceSet.add(gp3);
+		gamePieceSet.add(gp4);
+		gamePieceSet.add(gp5);
+		gamePieceSet.add(gp6);
+		gamePieceSet.add(gp7);	
+		
+		Assert.assertEquals(game.getPlayerPieces(), gamePieceSet);
 	}
 
 }

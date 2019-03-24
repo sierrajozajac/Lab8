@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -162,9 +163,11 @@ public class BoardGame {
 	 * @return Returns a set of locations of all players in the board game.
 	 */
 	public Set<Location> getPlayerLocations() {
-		// A set is a collection that cannot contain duplicate elements
-		// This means that typecasting the collection of locations that playerLocations.values() returns will yield no errors
-		return (Set<Location>)playerLocations.values();
+		Set<Location> ret = new HashSet<Location>();
+		for (Location loc : playerLocations.values()) {
+			ret.add(loc);
+		}
+		return ret;
 	}
 	
 	/***
@@ -172,8 +175,10 @@ public class BoardGame {
 	 * @return Returns a set of game pieces of all players in the board game.
 	 */
 	public Set<GamePiece> getPlayerPieces() {
-		// A set is a collection that cannot contain duplicate elements
-		// This means that typecasting the collection of game pieces that playerPieces.values() returns will yield no errors
-		return (Set<GamePiece>)playerPieces.values();
+		Set<GamePiece> ret = new HashSet<GamePiece>();
+		for (GamePiece gp : playerPieces.values()) {
+			ret.add(gp);
+		}
+		return ret;
 	}
 }
