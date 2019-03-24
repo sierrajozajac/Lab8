@@ -103,6 +103,7 @@ public class BoardGameTest {
 		Assert.assertEquals(game.getGamePiecesAtLocation(l8), piecesAtL8);
 		Assert.assertEquals(game.getGamePiecesAtLocation(l9), piecesAtL9);
 
+		// TODO: finish this
 	}
 
 }

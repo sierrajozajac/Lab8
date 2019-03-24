@@ -27,7 +27,12 @@ public class GamePieceTest {
 		Assert.assertEquals(GamePiece.RED_THIMBLE.toString(), "red thimble");
 		Assert.assertEquals(GamePiece.YELLOW_BOOT.toString(), "yellow boot");
 		
-		// TODO: finish moves first testing
+		Assert.assertEquals(GamePiece.BLUE_BOOT.movesFirst(GamePiece.RED_RACER, GamePiece.BLUE_RACER), GamePiece.RED_RACER);
+		Assert.assertEquals(GamePiece.BLUE_BOOT.movesFirst(GamePiece.BLUE_RACER, GamePiece.MAGENTA_RACER), GamePiece.BLUE_RACER);
+		Assert.assertEquals(GamePiece.BLUE_BOOT.movesFirst(GamePiece.MAGENTA_RACER, GamePiece.RED_THIMBLE), GamePiece.MAGENTA_RACER);
+		Assert.assertEquals(GamePiece.BLUE_BOOT.movesFirst(GamePiece.RED_THIMBLE, GamePiece.BLUE_BOOT), GamePiece.RED_THIMBLE);
+		Assert.assertEquals(GamePiece.BLUE_BOOT.movesFirst(GamePiece.BLUE_BOOT, GamePiece.GREEN_BOOT), GamePiece.BLUE_BOOT);
+		Assert.assertEquals(GamePiece.BLUE_BOOT.movesFirst(GamePiece.GREEN_BOOT, GamePiece.YELLOW_BOOT), GamePiece.GREEN_BOOT);
 	}
 
 }
