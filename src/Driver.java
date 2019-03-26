@@ -8,6 +8,7 @@ public class Driver {
 		GamePieceAppearanceTest gpat = new GamePieceAppearanceTest();
 		LocationTest lt = new LocationTest();
 		ShapeTest st = new ShapeTest();
+		BoardGameTest bgt = new BoardGameTest();
 		// TODO Auto-generated constructor stub
 	}
 

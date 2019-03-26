@@ -6,7 +6,7 @@ import org.junit.*;
 
 public class BoardGameTest {
 
-	public static void main(String[] args) {
+	public BoardGameTest() {
 		GamePiece gp1 = GamePiece.RED_RACER;
 		GamePiece gp2 = GamePiece.BLUE_RACER;
 		GamePiece gp3 = GamePiece.MAGENTA_RACER;

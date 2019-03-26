@@ -51,7 +51,7 @@ public enum GamePiece {
 	 * @param b Represents one of the game pieces.
 	 * @return Returns the game piece with the higher priority.
 	 */
-	public GamePiece movesFirst(GamePiece a, GamePiece b) {
+	public static GamePiece movesFirst(GamePiece a, GamePiece b) {
 		if (a.priority > b.priority) {
 			return b;
 		}
